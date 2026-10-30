@@ -15,7 +15,7 @@ export default function Testimonials() {
     <section className="testimonials-section">
       <div className="section-header" data-aos="zoom-in">
         <span className="section-subtitle">HAPPY CUSTOMERS</span>
-        <h2 className="section-title">Customer Reviews / Testimonials</h2>
+        <h2 className="section-title">Customer Reviews</h2>
       </div>
       <div className="testimonials-grid">
         {reviews.map((rev, i) => (

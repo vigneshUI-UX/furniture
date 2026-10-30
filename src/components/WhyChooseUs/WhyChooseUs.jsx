@@ -3,10 +3,10 @@ import React from 'react';
 import './WhyChooseUs.css';
 
 const reasons = [
-  { num: '01', title: 'Lifetime Wood Warranty', desc: 'Guaranteed termite-free solid timber frame constructions.' },
-  { num: '02', title: 'Free Festive White-Glove Delivery', desc: 'Complimentary assembly and doorstep setup across India.' },
-  { num: '03', title: '0% Cost EMI Options', desc: 'Flexible festival payment plans with major credit partners.' },
-  { num: '04', title: 'Handcrafted Perfection', desc: 'Inspected rigorously through 25 quality checkpoints.' },
+  { num: '', title: 'Lifetime Wood Warranty', desc: 'Guaranteed termite-free solid timber frame constructions.' },
+  { num: '', title: 'Free Festive White-Glove Delivery', desc: 'Complimentary assembly and doorstep setup across India.' },
+  { num: '', title: '0% Cost EMI Options', desc: 'Flexible festival payment plans with major credit partners.' },
+  { num: '', title: 'Handcrafted Perfection', desc: 'Inspected rigorously through 25 quality checkpoints.' },
 ];
 
 const cardAnimations = ['fade-right', 'zoom-in-up', 'zoom-in-down', 'fade-left'];
