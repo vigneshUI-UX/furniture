@@ -1,0 +1,87 @@
+/* src/components/CategorySection/CategorySection.css */
+.category-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-subtitle {
+  color: var(--orange-deep);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: var(--font-sans);
+  font-size: 2.4rem;
+  color: #2C1810;
+  margin-top: 6px;
+  font-weight: 800;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.category-card {
+  position: relative;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  cursor: pointer;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 16, 11, 0.95) 0%, transparent 70%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cat-discount {
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.category-overlay h3 {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 4px 0 12px 0;
+  font-weight: 700;
+}
+
+/* FIX: Make "Explore Items →" button text bright gold and bold */
+.cat-btn {
+  background: transparent;
+  border: none;
+  color: #FFD285 !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cat-btn:hover {
+  color: #FFFFFF !important;
+}

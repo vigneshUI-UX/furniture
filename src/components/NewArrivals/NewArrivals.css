@@ -1,0 +1,11 @@
+/* src/components/NewArrivals/NewArrivals.css */
+.new-arrivals-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+.new-arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}

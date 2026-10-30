@@ -1,0 +1,50 @@
+/* src/components/Testimonials/Testimonials.css */
+.testimonials-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  padding: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+/* FIX: Pure White Quotation Text */
+.testimonial-card p {
+  color: #FFFFFF !important;
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.reviewer-info strong {
+  display: block;
+  color: #E89B5B !important; /* Gold reviewer name */
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.reviewer-info span {
+  font-size: 0.82rem;
+  color: #FFEAD3 !important; /* Light cream location text */
+  opacity: 0.8;
+}

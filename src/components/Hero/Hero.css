@@ -1,0 +1,224 @@
+/* src/components/Hero/Hero.css */
+.hero-section {
+  position: relative;
+  min-height: auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(232, 155, 91, 0.25) 0%, rgba(212, 103, 67, 0.1) 40%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.festive-tag {
+  display: inline-block;
+  background: rgba(212, 103, 67, 0.12);
+  border: 1px solid var(--border-gold);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #D46743;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: #2C1810;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #D46743 0%, #8A0000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  color: #5C4033;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+.hero-badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #2C1810;
+  border: 1px solid var(--border-gold);
+  padding: 12px 20px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  width: fit-content;
+  box-shadow: 0 8px 20px rgba(44, 24, 16, 0.15);
+}
+
+.badge-num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFEAD3;
+}
+
+.badge-text {
+  font-size: 0.78rem;
+  color: #d6b8a8;
+}
+
+.badge-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 234, 211, 0.2);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #D46743 0%, #E89B5B 100%);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(212, 103, 67, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(212, 103, 67, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #D46743;
+  color: #2C1810;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(212, 103, 67, 0.1);
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card-glass-frame {
+  position: relative;
+  border-radius: 24px;
+  padding: 12px;
+  background: linear-gradient(135deg, rgba(212, 103, 67, 0.2), rgba(232, 155, 91, 0.3));
+  box-shadow: var(--shadow-warm);
+  width: 100%;
+  max-width: 480px; /* Controls the overall square frame width */
+}
+
+/* SQUARE IMAGE STYLING (1:1 Aspect Ratio) */
+.hero-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Forces the image box to remain a perfect square */
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  background: #2C1810;
+  border: 1px solid var(--border-gold);
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  color: #FFEAD3;
+}
+
+.floating-card strong {
+  display: block;
+  color: #FFEAD3;
+  font-size: 0.9rem;
+}
+
+.floating-card p {
+  font-size: 0.8rem;
+  color: #E89B5B;
+}
+
+.diya-sparkle {
+  font-size: 1.6rem;
+}
+
+/* ==========================================
+   RESPONSIVE OVERRIDES FOR ULTRA-WIDE (2560px)
+   ========================================== */
+@media screen and (min-width: 2560px) {
+  .hero-section {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  .card-glass-frame {
+    max-width: 600px; /* Scales up the square size proportionally on huge 2560px displays */
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .card-glass-frame {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .hero-badges {
+    margin: 0 auto 28px auto;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+}

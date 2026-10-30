@@ -1,0 +1,48 @@
+/* src/components/ProductHighlights/ProductHighlights.css */
+.highlights-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: stretch; /* Keeps all cards equal height */
+}
+
+.highlight-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  padding: 36px 28px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Bright White Card Title */
+.highlight-card h3 {
+  font-family: var(--font-sans);
+  color: #FFFFFF !important;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* FIX: Crisp Light Cream for Body Text so it's no longer hidden */
+.highlight-card p {
+  color: #FFEAD3 !important; 
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}

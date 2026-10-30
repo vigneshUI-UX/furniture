@@ -1,0 +1,49 @@
+/* src/components/WhyChooseUs/WhyChooseUs.css */
+.why-choose-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  padding: 32px 28px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.why-num {
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #E89B5B !important; /* Bright warm gold */
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Bright White Card Title */
+.why-card h3 {
+  font-family: var(--font-sans);
+  color: #FFFFFF !important;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* FIX: Crisp Light Cream Paragraph Text */
+.why-card p {
+  color: #FFEAD3 !important;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
