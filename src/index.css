@@ -28,6 +28,19 @@
   margin: 0;
   padding: 0;
 }
+/* ==========================================================================
+   HIDE HORIZONTAL OVERFLOW & PREVENT SIDE-SCROLLING
+   ========================================================================== */
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--bg-dark);
