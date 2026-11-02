@@ -13,7 +13,6 @@ export default function CategorySection() {
   return (
     <section id="categories" className="category-section">
       <div className="section-header">
-        <span className="section-subtitle">CURATED COLLECTIONS</span>
         <h2 className="section-title"> Featured Collections</h2>
       </div>
 
@@ -24,7 +23,6 @@ export default function CategorySection() {
             <div className="category-overlay">
               <span className="cat-discount">{cat.discount}</span>
               <h3>{cat.title}</h3>
-              <button className="cat-btn">Explore Items →</button>
             </div>
           </div>
         ))}

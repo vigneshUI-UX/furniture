@@ -13,7 +13,6 @@ export default function SocialGallery() {
   return (
     <section className="social-gallery-section">
       <div className="section-header">
-        <span className="section-subtitle">SARAF.LIVING ON INSTAGRAM</span>
         <h2 className="section-title">Social Media Gallery</h2>
       </div>
       <div className="social-grid">

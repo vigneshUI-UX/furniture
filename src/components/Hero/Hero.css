@@ -133,6 +133,41 @@
 .btn-secondary:hover {
   background: rgba(212, 103, 67, 0.1);
 }
+/* ==========================================================================
+   REMOVE GRADIENTS FROM ALL BUTTONS & APPLY SOLID COLOR
+   ========================================================================== */
+
+/* 1. Primary Buttons & Add-to-Cart Buttons */
+.btn-primary,
+.add-cart-btn,
+.checkout-btn,
+.cart-btn {
+  background: #D46743 !important; /* Solid warm terracota/orange */
+  color: #FFFFFF !important;       /* Clean white text */
+  border: none !important;
+}
+
+/* 2. Hover State for Solid Buttons */
+.btn-primary:hover,
+.add-cart-btn:hover,
+.checkout-btn:hover,
+.cart-btn:hover {
+  background: #B85230 !important; /* Slightly darker solid shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 103, 67, 0.4) !important;
+}
+
+/* 3. Secondary Outlined Buttons */
+.btn-secondary {
+  background: transparent !important;
+  border: 2px solid #D46743 !important;
+  color: #2C1810 !important;
+}
+
+.btn-secondary:hover {
+  background: #D46743 !important;
+  color: #FFFFFF !important;
+}
 
 .hero-visual {
   position: relative;

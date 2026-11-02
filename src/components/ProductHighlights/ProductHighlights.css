@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
-  align-items: stretch; /* Keeps all cards equal height */
+  align-items: stretch;
 }
 
 .highlight-card {
@@ -24,13 +24,26 @@
   justify-content: center;
 }
 
-.highlight-icon {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 16px;
+/* Styled Bootstrap Icon Container */
+.highlight-icon-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Bright White Card Title */
+.highlight-icon-wrapper i {
+  font-size: 2.4rem;
+  color: #E89B5B !important; /* Gold accent color */
+  filter: drop-shadow(0 0 10px rgba(232, 155, 91, 0.4));
+  transition: transform 0.6s ease;
+}
+
+.highlight-card:hover .highlight-icon-wrapper i {
+  transform: scale(1.15) rotate(5deg);
+  color: #D46743 !important;
+}
+
 .highlight-card h3 {
   font-family: var(--font-sans);
   color: #FFFFFF !important;
@@ -39,9 +52,8 @@
   font-weight: 700;
 }
 
-/* FIX: Crisp Light Cream for Body Text so it's no longer hidden */
 .highlight-card p {
-  color: #FFEAD3 !important; 
+  color: #FFEAD3 !important;
   font-size: 0.95rem;
   line-height: 1.6;
   opacity: 0.9;

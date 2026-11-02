@@ -17,7 +17,6 @@ export default function Newsletter() {
   return (
     <section className="newsletter-section">
       <div className="newsletter-container">
-        <span className="section-subtitle">STAY UPDATED</span>
         <h2 className="section-title"> Newsletter Subscription</h2>
         <p>Subscribe to get exclusive festive discount codes, new arrival alerts, and interior styling tips.</p>
 

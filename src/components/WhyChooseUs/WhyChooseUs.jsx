@@ -15,7 +15,6 @@ export default function WhyChooseUs() {
   return (
     <section className="why-choose-section">
       <div className="section-header" data-aos="fade-up">
-        <span className="section-subtitle">THE AURA PROMISE</span>
         <h2 className="section-title">Why Choose Us</h2>
       </div>
       <div className="why-grid">

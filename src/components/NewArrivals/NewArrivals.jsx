@@ -5,7 +5,7 @@ import './NewArrivals.css';
 
 const newItems = [
   { id: 'na1', name: 'Modern Minimalist Lounge Chair', price: 18999, originalPrice: 26000, rating: 4.9, image: 'https://i.pinimg.com/1200x/33/91/1a/33911a027f9893731f43bb2f35a43fc4.jpg', tag: 'Just Landed' },
-  { id: 'na2', name: 'Teak Wood Coffee Table with Brass Inlay', price: 15499, originalPrice: 21000, rating: 4.8, image: 'https://i.pinimg.com/736x/f7/69/e0/f769e07652aa45d035014e516dac84e0.jpg', tag: 'New Festive Drop' },
+  { id: 'na2', name: 'Teak Wood Coffee Table with ', price: 15499, originalPrice: 21000, rating: 4.8, image: 'https://i.pinimg.com/736x/f7/69/e0/f769e07652aa45d035014e516dac84e0.jpg', tag: 'New Festive Drop' },
   { id: 'na3', name: 'Hand-Carved Wooden Bookshelf', price: 28999, originalPrice: 38000, rating: 5.0, image: 'https://i.pinimg.com/1200x/98/24/dd/9824dd772d9c176b1d71045c6eaf1d20.jpg', tag: 'Handcrafted' },
 ];
 
@@ -15,7 +15,6 @@ export default function NewArrivals() {
   return (
     <section className="new-arrivals-section">
       <div className="section-header">
-        <span className="section-subtitle">FRESHLY CRAFTED FOR YOU</span>
         <h2 className="section-title">New Arrivals</h2>
       </div>
 

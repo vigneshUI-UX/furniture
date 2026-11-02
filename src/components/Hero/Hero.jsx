@@ -8,9 +8,8 @@ export default function Hero() {
       <div className="hero-bg-glow"></div>
       <div className="hero-container">
         <div className="hero-content">
-          <div className="festive-tag">✨ DEEPAVALI SPECIAL ✨</div>
           <h1 className="hero-title">
-            Illuminate Your Home With <span>Luxury Comfort</span>
+           Your Home With Luxury Comfort
           </h1>
           <p className="hero-subtitle">
             Transform your living spaces this festive season. Enjoy up to <strong>50% OFF</strong> on premium handcrafted teak, velvet sofas, and royal dining collections.
@@ -42,7 +41,7 @@ export default function Hero() {
         <div className="hero-visual">
           <div className="card-glass-frame">
             <img
-              src="https://i.pinimg.com/736x/c5/1d/6b/c51d6b320889dcf736e3fc56f88e923c.jpg"
+              src="https://i.pinimg.com/736x/05/bd/c7/05bdc7b0439676783a55116977233b98.jpg"
               alt="Royal Sofa Collection"
               className="hero-img"
             />

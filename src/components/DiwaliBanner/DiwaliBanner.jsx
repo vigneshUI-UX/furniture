@@ -21,7 +21,6 @@ export default function DiwaliBanner() {
     <section id="sale" className="sale-banner-section">
       <div className="sale-banner-container">
         <div className="sale-banner-content">
-          <div className="sale-tag">🔥 FLASH FESTIVE OFFER</div>
           <h2>Diwali Maha Dhamaka Deal</h2>
           <p>Extra 10% Instant Discount with HDFC & ICICI Cards | Free Festive Gift Box on orders above ₹49,999</p>
         </div>
